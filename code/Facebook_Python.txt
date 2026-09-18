@@ -1,0 +1,452 @@
+python questions:
+Write a python program to remove duplicates , keep the first occurrance  
+write a python program to count words?  
+Write a function return max in python
+Write a function return Median in python
+python: find substring, find frequency of words
+String Manipulation questions  
+python data engineering libraries
+
+IP address parsing--
+count of person having most neighbors--
+given a list of tuples of movie watched times, find how many unique minutes of the movie did the viewer watch e.g. [(0,15),(10,25)]. The viewer watched 25 minutes of the movie.  
+delete duplicates in a list  
+How to rate the popularity of a posted video online.  
+Count the number of times a word appear in a sentence using a Hash Map--
+3. Check the substring in the string
+3) Print the first nonrecurring element in a list
+4) Print the most recurring element in a list
+2)- Find the minimum absolute difference between the set of elements of an array.  
+Recursively parse a string for a pattern that can be either 1 or 2 characters long
+
+Given full authority to "make it work", import a large data set with duplicates into a warehouse while meeting the requirements of a business intelligence designer for query speed.  
+Query a many to many relationship while not violating the grain of a fact table.  
+delete all dupliactes from a table in one query
+
+-------------------------------------------------------------------------------------------------------
+Glassdoor:
+
+				(python) Given two sentences, construct an array that has the words that appear in one sentence and not the other.  
+2 Answers
+(SQL) Given a database schema, calculate particular ratios, e.g., the proportion of valid sales that occurred on certain dates.  
+
+High level SQL questions, Designing a database given a scenario and questions based on that, join optimization, reporting SQL questions without using special functions like lag.  
+
+SQL:
+1. given table products(product_id, brand_name,product_name, product_price), find brand_names with avg price > 3 and having more then 5 products
+2.given table sales (sale_id, promotion_id, sale_amount, other columns), find % of how sales with promotions ( promotion_id is null) are doing in comparison to all sales.
+Coding(Java):
+1. find avg word length in a sentence
+2. ip address validation
+3. Friends problem [[A,B], [B,D],[E]...] ( List of lists);  
+
+Find max min avg of the order by date, customer, product, state. Coding was easy pretty much what people already posted here. 
+
+Phone Interview: Intermediate level Python and SQL questions. 5 questions each for 30 minutes.  
+2 Answers
+Onsite Interview: Cannot give specifics as I had signed NDA, but it is a real-world case study. You have to create Dimensional model and then write queries on whiteboard based on interviewer's requirements. Knowing "Key-Operating Metrics" is highly recommended.  
+
+SQL:
+1. Percentage increase in revenue compared to promoted and non-promoted products.
+2. Products classes that has the highest transactions
+3. Count of Customers who bought 2 items type (A,B)
+4. Don't remember
+
+Python:
+1. Average length of letters to words.
+2. Parse an ip address (This is a favourite FB question)
+3. [[A],[A,B],[A,C],[B,D],[C,A]] -- Find the alphabet with highest neighbors? -- (Wasnt able to solve because of time limit but the interviewer was like I get what… 
+
+
+
+
+
+
+
+
+
+Python : Average word length, ip-address parsing, dictionary, list of lists, flatten list of lists. ( Similar to previous interview experiences)  
+
+
+
+1. the ORDER BY command in SQL is automatically set in what format if you didn't set it? Ascending or Descending?
+Answer: Ascending
+2. When you want to delete or add a column of a table in a database, what command you will use?
+Answer: ALTER
+3. this question about about LEFT JOIN, they ask what command you want to use if you want to keep all the info of the left table?
+Answer: left join
+4. You want to combine two column after removing two duplicates, use UNION or UNION ALL?
+Answer: UNION  
+
+
+You have a 2-D array of friends like [[A,B],[A,C],[B,D],[B,C],[R,M], [S],[P], [A]]
+Write a function that creates a dictionary of how many friends each person has. People can have 0 to many friends. However, there won't be repeat relationships like [A,B] and [B,A] and neither will there be more than 2 people in a relationship  
+8 Answers
+
+Validate an IP Address. Multiple test cases given.  
+
+SQL: The names of salespeople that have 2 or more orders. When was the earliest and latest order made ? cumulative sum
+Python: IP Address Binary Search, Facebook Friends Tree,  
+
+-----------------------------------------------------------
+want you to write me a simple spell checking engine.
+
+The query language is a very simple regular expression-like language, with one special character: . (the dot character), which means EXACTLY ONE character (it can be any character). So, for example, 'c.t' would match 'cat' as the dot matches any character. There may be any number of dot characters in the query (or none).
+
+Your spell checker will have to be optimized… 
+Show More
+Given an array of integers, we would like to determine whether the array is monotonic (non-decreasing/non-increasing) or not.
+Examples:
+// 1 2 5 5 8
+// true
+// 9 4 4 2 2
+// true
+// 1 4 6 3
+// false
+
+//1 1 1 1 1 1
+// true  
+2 Answers
+Calculate the average word length.
+For the given set of words return the average word length.  
+1 Answer
+products sales
++------------------+---------+ +------------------+---------+
+| product_id | int |------->| product_id | int |
+| product_class_id | int | +---->| store_id | int |
+| brand_name | varchar | | +->| customer_id | int |
+| product_name | varchar | | | | promotion_id | int |
+| price | int | | | | store_sales | decimal |
++------------------+---------+ | | | store_cost | decimal |
+                                | | | units_sold | decimal |
+                                | | | transaction_date | date |
+                                | | +------------------+---------+
+                                | |
+stores | | customers
++-------------------+---------+ | | +---------------------+---------+
+| store_id | int |-+ +--| customer_id | int |
+| type | varchar | | first_name | varchar |
+| name | varchar | | last_name | varchar |
+| state | varchar | | state | varchar |
+| first_opened_date | datetime| | birthdate | date |
+| last_remodel_date | datetime| | education | varchar |
+| area_sqft | int | | gender | varchar |
++-------------------+---------+ | date_account_opened | date |
+                                      +---------------------+---------+
+
+Question 1:
+What brands have an average price above $3 and contain at least 2 different products?
+
+Question 2:
+  To improve sales, the marketing department runs various types of promotions.
+  The marketing manager would like to analyze the effectiveness of these promotion campaigns.
+  In particular, what percent of our sales transactions had a valid promotion applied?
+
+Question 3:
+  We want to run a new promotion for our most successful category of products
+  (we call these categories “product classes”).
+  Can you find out what are the top 3 selling product classes by total sales?
+
+Question 4:
+    We are considering running a promo across brands. We want to target
+    customers who have bought products from two specific brands.
+    Can you find out which customers have bought products from both the
+    “Fort West" and the "Golden" brands?  
+---------------------------------------------------------
+
+
+SQL - I was given 4 tables Sales, Product, Promotion and something else (Never had to use it).
+1. Which product had the highest sales with promotions and sales ( basically a where clause on 2 flags)
+2. What % of sales happened on the first and last day of promotion.
+I don't remember the rest.. I'd say your ability to translate regular english statements into SQL is tested very well   … 
+Show More
+Find the mismatching words between 2 strings- Java  
+
+
+
+(python) Given two sentences, construct an array that has the words that appear in one sentence and not the other.  
+2 Answers
+(SQL) Given a database schema, calculate particular ratios, e.g., the proportion of valid sales that occurred on certain dates.
+
+SQL (Given four charts) and Python questions(something similar to Leetcode)  
+
+Given k numbers which are less than n, return the set of prime numbers among them  
+
+High level SQL questions, Designing a database given a scenario and questions based on that, join optimization, reporting SQL questions without using special functions like lag.  
+
+Top3 brand names with their average pieces more than $3 and having atleast 2 products.  
+1 Answer
+Manager want to analyze the how the promotions on certain products are performing.find how the the percent of promoted sales?  
+3 Answers
+get the top3 product class_id by the total sales.  
+2 Answers
+python :average length of words.  
+
+
+
+SQL:
+1. given table products(product_id, brand_name,product_name, product_price), find brand_names with avg price > 3 and having more then 5 products
+2.given table sales (sale_id, promotion_id, sale_amount, other columns), find % of how sales with promotions ( promotion_id is null) are doing in comparison to all sales.
+Coding(Java):
+1. find avg word length in a sentence
+2. ip address validation
+3. Friends problem [[A,B], [B,D],[E]...] ( List of lists);  
+
+Find max min avg of the order by date, customer, product, state. Coding was easy pretty much what people already posted here.  
+
+
+Write a program to find avg_word_length with test cases?
+Write a program to validate ip address with test cases ?
+SQL :
+Interviewer gave a schema with products, sales .Using that schema you have to write the sql queries .It is easy only but you have to understand the schema and time plays very important factor .I tried to answer 3 sql questions
+
+
+Avg length of words, some of the edge cases are having spaces in the beginning and end of the words, returning a float instead of int, returning None for blank input.
+Valid ip address, edge case to remember is if there are alphanumeric characters.
+
+SQL questions:
+One SQL question was tricky because you have to look at the data to come up with the question, the question is to find the percent of valid promotion, condition to find valid promotion is not specified in the question, so you have to figure it from looking at the data.
+Other SQL questions are based on a join, group by, top(3)  
+
+Phone: SQL qs are pretty basic on equi joins, outer joins, and self joins. Coding exercises are pretty basic like word search, etc. Time is a crunch (1hr). You have to keep explaining while coding so that the interviewer online understands your thought process. In Person: Some live coding exercise, tougher than phone qs, product sense, visualization.  
+
+Coderpad SQL questions with buildin data schema  
+3 Answers
+Python Valid IP address  
+2 Answers
+Python graph node count  
+2 Answers
+Python average word length
+
+Given this data calculate this KPI
+How would you design the data model for this scenario  
+
+Design a relational database for a ride-sharing app.  
+Answer Question
+(After being shown a graph with some data) Can you think of reasons why the data would appear this way?  
+
+SQL:
+1. Percentage increase in revenue compared to promoted and non-promoted products.
+2. Products classes that has the highest transactions
+3. Count of Customers who bought 2 items type (A,B)
+4. Don't remember
+
+Python:
+1. Average length of letters to words.
+2. Parse an ip address (This is a favourite FB question)
+3. [[A],[A,B],[A,C],[B,D],[C,A]] -- Find the alphabet with highest neighbors? -- (Wasnt able to solve because of time limit but the interviewer was like I get what I want to convey.. I gave her an algo of what I would I have done)  
+
+Flatten a nested dictionary?? ( this was the hardest question in coder pad questions )  
+
+SQL : Top 3 Products by sale, % using Case, Basic Having clause and one Set operator (Intersect) type question
+
+Python : Average word length, ip-address parsing, dictionary, list of lists, flatten list of lists. ( Similar to previous interview experiences) 
+
+1. Evaluate the IP address in the right format
+2. Calculate the avg length of words in a sentence
+3. 3 SQL questions - Joins, TOP(3)  
+
+describe a situation where you did not agree with the stakeholders and how did you handle?  
+
+Given a multi-step product feature, write SQL to see how well this feature is doing (loading times, step completion %). Then use Python to constantly update average step time as new values stream in, given that there are too many to store in memory.  
+
+SQL:
+1.Name few analytical functions 2. how to display id, next_id from <table>
+General:
+1. Tell me about yourself 2. challenges faced and how to overcome.
+Data Modelling:
+how do you calculate unique logins by a user in facebook.com
+
+sql : inner join , cases , order by , limit
+python: avg length of sentence , valid IP address  
+
+given some sample web UI log data, write a SQL query to answer various questions  
+1 Answer
+given some sample web UI log data, write a python algorithm to answer various questions  
+
+Python: Average length of words in a string. validate ip adress (like if it has 4 parts, with numeric not above 255 so on)
+SQL: group by, average in a single query over values in single table  
+
+There was a string parsing question via Python. Just know how to parse a string into words or even letters and to apply some sort of logic to the string.  
+
+SQL questions based on JOINS, SUBQUERY, AGGREGATE functions and GROUP BY.  
+Answer Question
+The coding questions are already mentioned here on Glassdoor. Just practice thinking loudly.  
+
+Python
+1.given an ip address as an input string, validate it and return True/False
+2.count the neighbors of each node in a graph. input graph is a multi dimensional list
+
+SQL
+1. Display the most common name in the table
+2. a case statement related question. pretty straightforward  
+
+given a list of tuples of movie watched times, find how many unique minutes of the movie did the viewer watch e.g. [(0,15),(10,25)]. The viewer watched 25 minutes of the movie.  
+
+how to find duplicates in an array  
+
+Python Questions - 1) Print Max element of a given list  2) Print median of a given list 3) Print the first nonrecurring element in a list 4) Print the most recurring element in a list 5) Greatest common Factor
+
+Python
+-Count distinct words in a sentence
+-Count the number of times a word appear in a sentence using a Hash Map
+-Return tuples of a list, matching each item to another item
+-Count the number of times a substring appear in a string
+
+SQL
+-Return min and max age of male/female who bought a product
+-Count the number of stores in a state with grand total ? 25000 sq feet  
+
+SQL:
+1. Get the states with more the than 100000 population
+2. Count the number of products which sold more than 10 units
+3. Get youngest customer who bought atleast 1 product
+4. Get the areas from which we have the products sold
+
+Python
+1. Count the number of unique words in a sequence?
+2. Print the part of the array of numbers
+3. Check the substring in the string
+4. Question on exceptions  
+
+How many unique world are in the provided string?  
+
+How to do certain types of SQL filtering in one pass rather than using two queries unioned together.  
+
+SQL Coding:
+5 questions
+4 tables were given and questions were mostly on joins, aggregate functions, sub queries.
+
+Python Coding: I guess there were total 5 questions but could reach only till second question.
+Count the number of words in a sentence.
+Count the frequency of words from the list and store the results in a hash map.  
+
+SQL questions -
+
+A table schema with tables like employee, department, employee_to_projects, projects
+
+1) Select employee from departments where max salary of the department is 40k
+2) Select employee assigned to projects
+3) Select employee which have the max salary in a given department
+4) Select employee with second highest salary
+5) Table has two data entries every day for # of apples and oranges sold. write a query to get the difference between the apples… 
+Show More
+Python Questions -
+
+1) Print Max element of a given list
+2) Print median of a given list
+3) Print the first nonrecurring element in a list
+4) Print the most recurring element in a list
+5) Greatest common Factor  
+
+
+SQL Coding Questions and Python Coding Questions that involved a hashmap.Know your basics well
+
+
+1)- programmingl find the max no from the given set of elements in an array (without using max function)
+2)- Find the minimum absolute difference between the set of elements of an array. 
+
+Create DDL (table and foreign keys) for several tables in a provided ERD. ERD contains at least one many to many relationship.  
+3 Answers
+Recursively parse a string for a pattern that can be either 1 or 2 characters long.  
+Answer Question
+Perform a merge-sort with SQL only.  
+1 Answer
+Given full authority to "make it work", import a large data set with duplicates into a warehouse while meeting the requirements of a business intelligence designer for query speed.  
+Answer Question
+Query a many to many relationship while not violating the grain of a fact table
+
+1) Given a number and a array.
+Python code to find sum of any 2 numbers in a list is equal to a given number.
+
+2) sql question mostly on case when, joins
+ex: Q3: delete all dupliactes from a table in one query
+
+3) Mostly the interviewer was cornering me by asking not to use regular ways, so he was expecting the answers in a particular way, ex: can't use joins, sub query etc which made very simple questions tough  
+
+flatten a given list that contain members that are numbers or nested lists.  
+
+SQL: find % of sales w/o promotions, find brands that have more then 2 products and avg price > 3, Python: find avg word len, input is a string, identify if a string is a valid I
+
+What is a loop that goes on forever?  
+2 Answers
+What is the term used to select non duplicates in SQL?  
+
+
+---------------------------------------------------------------------------------------------------------
+Recursively parse a string for a pattern that can be either 1 or 2 characters long--
+
+from itertools import groupby
+
+string = "Geeeks fore Geeksee"
+letter = "ee"
+
+q = 0
+cnt = 0
+length = len(string)
+
+while q < length:
+    if string[q:length].find(letter) > 0:
+        q = q + string[q:length].find(letter) + (len(letter))
+        cnt = cnt +1
+    else:
+        q = q + 1
+
+print(cnt)
+
+--------------------------------------------------------------------------------------------------------------
+
+Neighbors:
+
+
+lis1 = [['A'],['A',['Z','Q','W']],['A','C'],['B','D'],['C','A']] 
+
+lis2 = []
+previtem = None
+nextitem = None
+dict1 = {}
+
+def reclist(item1):
+    for item2 in item1:
+        
+        if type(item2) == list:
+            lis2.append("Boundary")
+            
+            reclist(item2)
+        else:
+            lis2.append(item2)
+            
+            
+
+for item in lis1:
+    lis2.append("Boundary")
+
+    reclist(item)
+    
+print(lis2)
+    
+index =0
+while index <= len(lis2)-1:
+    item = lis2[index]
+    nextitem = lis2[index+1]
+    if index <> len(lis2)-1:
+        if item <> 'Boundary' and item <> previtem and previtem <> None and previtem <> 'Boundary':
+            if dict1.get(item):
+                dict1.update({item:dict1.get(item)+1})
+            else:
+                dict1.update({item:1})
+    
+        if  item <> 'Boundary' and item <> nextitem and nextitem <> None and nextitem <> 'Boundary':
+            if dict1.get(item):
+                dict1.update({item:dict1.get(item)+1})
+            else:
+                dict1.update({item:1})
+    else:
+        
+        
+        previtem = item
+        
+        
+        index = index +1
+    
+print(dict1)

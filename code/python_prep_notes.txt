@@ -1,0 +1,153 @@
+dictionary
+print (dict.keys()) --> only keys
+print (dict.items()) --> both key and values
+print (dict.values()) --> only values
+print (sorted(dict)) --> sort by keys
+print (sorted(dict.values())) --> sort by value, only if the keys are of the same type
+list - can contain any item
+prices.insert(2, 12.49) --> insert at a position
+prices[0] - print by position
+prices.sort()
+len(list) --> number of items in the list
+products[:3] --> first element to a given point
+products[2:4]
+sorted(iterable, key=key, reverse=reverse)
+
+Another difference is that the list.sort() method is only defined for lists. In contrast, the sorted() function accepts any iterable.
+
+res_sum = sum(float(sub) for sub in test_list) 
+for i in range(0, len(test_list)): 
+
+float pow(x,y,mod)
+math.factorial(xyz)
+math.gcd( x, y )
+res = [i for i, val in enumerate(test_list) if val] 
+enumerate returns an iterable, with the range being the number in the list
+compress function checks for all the elements in list and returns the list of indices with True values. This is most Pythonic and elegant way to perform this particular task.
+res = list(compress(range(len(test_list)), test_list)) 
+
+
+temp = groupby(test_list) 
+for key, group in temp:
+    lis.append((len(list(group))))
+    
+    
+set() method is used to convert any of the iterable to the distinct element and sorted sequence of iterable elements, commonly called Set.
+
+common items in two lists
+res = len(set(test_list1) & set(test_list2)) >= K 
+
+# Using randrange() to generate numbers from 50-100 
+# skipping 9
+print ("Random number from 50-100 skip 5 is : ",end="") 
+print (random.randrange(50,100,9)) 
+
+chr(ord(ch) + 3) - find characters
+	
+pos = ch.index(ch1,2) 
+
+# Minimum identical consecutive Subarray 
+# using groupby() + min() + lambda 
+temp = groupby(test_list) 
+res = min(temp, key = lambda sub: len(list(sub[1]))) 
+
+----need to learn loops-----------------------------------------------------------------------
+find more facebook python questions
+group by
+lamda
+map
+zip
+compress
+string functions
+	chr
+	index
+	split
+	substring
+define functions
+isinstance(i, int)
+print (random.randrange(50,100,9)) 
+sorted(iterable, key=key, reverse=reverse)
+range
+enumerate
+print(string.count("geeks", 0, 5)) 
+
+result = text.endswith('geeks', 10, 15) 
+sub[, start[, end]])
+index(	sub[, start[, end]])
+Like find(), but raise ValueError when the substring is not found.
+
+count(	sub[, start[, end]])
+Return the number of occurrences of substring sub in string S[start:end]. Optional arguments start and end are interpreted as in slice notation.
+
+isalnum(	)
+Return true if all characters in the string are alphanumeric and there is at least one character, false otherwise.
+
+isalpha(	)
+Return true if all characters in the string are alphabetic and there is at least one character, false otherwise.
+
+isdigit(	)
+Return true if all characters in the string are digits and there is at least one character, false otherwise.
+
+islower(	)
+Return true if all cased characters in the string are lowercase and there is at least one cased character, false otherwise
+
+isspace(	)
+Return true if there are only whitespace characters in the string and there is at least one character, false otherwise.
+
+s = s.join(list1) 
+
+lower(	)
+Return a copy of the string converted to lowercase.
+
+partition(	sep)
+Split the string at the first occurrence of sep, and return a 3-tuple containing the part before the separator, the separator itself, and the part after the separator. If the separator is not found, return a 3-tuple containing the string itself, followed by two empty strings. New in version 2.5.
+
+replace(	old, new[, count])
+Return a copy of the string with all occurrences of substring old replaced by new. If the optional argument count is given, only the first count occurrences are replaced.
+
+rfind(	sub [,start [,end]])
+Return the highest index in the string where substring sub is found, such that sub is contained within s[start,end]. Optional arguments start and end are interpreted as in slice notation. Return -1 on failure.
+
+rindex(	sub[, start[, end]])
+Like rfind() but raises ValueError when the substring sub is not found.
+
+rpartition(	sep)
+Split the string at the last occurrence of sep, and return a 3-tuple containing the part before the separator, the separator itself, and the part after the separator. If the separator is not found, return a 3-tuple containing two empty strings, followed by the string itself. New in version 2.5.
+
+split(	[sep [,maxsplit]])
+Return a list of the words in the string, using sep as the delimiter string. If maxsplit is given, at most maxsplit splits are done. (thus, the list will have at most maxsplit+1 elements). If maxsplit is not specified, then there is no limit on the number of splits (all possible splits are made). Consecutive delimiters are not grouped together and are deemed to delimit empty strings (for example, "'1„2'.split(',')"returns "['1', '', '2']"). The sep argument may consist of multiple characters (for example, "'1, 2, 3'.split(', ')" returns "['1', '2', '3']"). Splitting an empty string with a specified separator returns "['']".
+If sep is not specified or is None, a different splitting algorithm is applied. First, whitespace characters (spaces, tabs, newlines, returns, and formfeeds) are stripped from both ends. Then, words are separated by arbitrary length strings of whitespace characters. Consecutive whitespace delimiters are treated as a single delimiter ("'1 2 3'.split()" returns "['1', '2', '3']"). Splitting an empty string or a string consisting of just whitespace returns an empty list.
+
+startswith(	prefix[, start[, end]])
+
+
+swapcase(	)
+
+replace(	old, new[, count])
+Return a copy of the string with all occurrences of substring old replaced by new. If the optional argument count is given, only the first count occurrences are replaced.
+
+index(	sub[, start[, end]])
+
+
+
+res = ''.join(sorted(test_string)) 
+zip(lis1, lis[1:])
+
+
+
+
+
+
+
+
+clear()	Removes all the elements from the dictionary
+copy()	Returns a copy of the dictionary
+fromkeys()	Returns a dictionary with the specified keys and value
+get()	Returns the value of the specified key
+items()	Returns a list containing a tuple for each key value pair
+keys()	Returns a list containing the dictionary's keys
+pop()	Removes the element with the specified key
+popitem()	Removes the last inserted key-value pair
+setdefault()	Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
+update()	Updates the dictionary with the specified key-value pairs
+values()	Returns a list of all the values in the dictionary
